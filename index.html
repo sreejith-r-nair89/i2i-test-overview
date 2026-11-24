@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>i2i Test &mdash; Overview</title>
+<style>
+  * { box-sizing: border-box; margin: 0; }
+  body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; background: #111418; color: #e6e8eb; padding: 2rem; }
+  header { max-width: 1400px; margin: 0 auto 1.5rem; }
+  h1 { font-size: 1.6rem; font-weight: 650; }
+  header p { color: #9aa3ad; margin-top: .35rem; font-size: .95rem; }
+  nav { max-width: 1400px; margin: 0 auto 2rem; display: flex; gap: .4rem; flex-wrap: wrap; }
+  nav a { color: #cfe3ff; background: #1c2128; border: 1px solid #2d333b; border-radius: 6px; padding: .25rem .7rem; text-decoration: none; font-size: .9rem; }
+  nav a:hover { background: #2d333b; }
+  main { max-width: 1400px; margin: 0 auto; }
+  section { margin-bottom: 2.5rem; }
+  h2 { font-size: 1.1rem; font-weight: 600; color: #adbac7; margin-bottom: .8rem; border-bottom: 1px solid #2d333b; padding-bottom: .4rem; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; }
+  figure { background: #1c2128; border: 1px solid #2d333b; border-radius: 10px; overflow: hidden; }
+  figure img { display: block; width: 100%; height: auto; background: #0d1117; }
+  figcaption { padding: .55rem .8rem; font-size: .85rem; color: #9aa3ad; display: flex; align-items: center; gap: .5rem; }
+  .step { display: inline-flex; align-items: center; justify-content: center; width: 1.3rem; height: 1.3rem; border-radius: 50%; background: #316dca; color: #fff; font-size: .75rem; font-weight: 700; flex: none; }
+  a.back { display: inline-block; margin-top: .6rem; font-size: .8rem; color: #6e7681; text-decoration: none; }
+</style>
+</head>
+<body>
+<header>
+  <h1>i2i Test &mdash; Image Set Overview</h1>
+  <p>Each set: original image &rarr; first i2i step &rarr; i2i with swapped background.</p>
+</header>
+<nav><a href="#set-1">1</a> <a href="#set-2">2</a> <a href="#set-3">3</a> <a href="#set-4">4</a> <a href="#set-5">5</a> <a href="#set-6">6</a> <a href="#set-7">7</a> <a href="#set-8">8</a> <a href="#set-9">9</a> <a href="#set-10">10</a></nav>
+<main>
+  <section id="set-1">
+    <h2>Set 1</h2>
+    <div class="grid">
+      <figure>
+        <img src="1%20-%20Original.jpg" alt="Set 1 original" loading="lazy">
+        <figcaption><span class="step">1</span> Original</figcaption>
+      </figure>
+      <figure>
+        <img src="1%20-%20i2i.png" alt="Set 1 i2i" loading="lazy">
+        <figcaption><span class="step">2</span> i2i (first step)</figcaption>
+      </figure>
+      <figure>
+        <img src="swapped/1%20-%20i2i_with_2%20-%20i2i.png" alt="Set 1 with background of set 2" loading="lazy">
+        <figcaption><span class="step">3</span> i2i with bg of set 2</figcaption>
+      </figure>
+    </div>
+  </section>
+  <section id="set-2">
+    <h2>Set 2</h2>
+    <div class="grid">
+      <figure>
+        <img src="2%20-%20Original.jpg" alt="Set 2 original" loading="lazy">
+        <figcaption><span class="step">1</span> Original</figcaption>
+      </figure>
+      <figure>
+        <img src="2%20-%20i2i.png" alt="Set 2 i2i" loading="lazy">
+        <figcaption><span class="step">2</span> i2i (first step)</figcaption>
+      </figure>
+      <figure>
+        <img src="swapped/2%20-%20i2i_with_1%20-%20i2i.png" alt="Set 2 with background of set 1" loading="lazy">
+        <figcaption><span class="step">3</span> i2i with bg of set 1</figcaption>
+      </figure>
+    </div>
+  </section>
+  <section id="set-3">
+    <h2>Set 3</h2>
+    <div class="grid">
+      <figure>
+        <img src="3%20-%20Original.jpg" alt="Set 3 original" loading="lazy">
+        <figcaption><span class="step">1</span> Original</figcaption>
+      </figure>
+      <figure>
+        <img src="3%20-%20i2i.png" alt="Set 3 i2i" loading="lazy">
+        <figcaption><span class="step">2</span> i2i (first step)</figcaption>
+      </figure>
+      <figure>
+        <img src="swapped/3%20-%20i2i_with_4%20-%20i2i.png" alt="Set 3 with background of set 4" loading="lazy">
+        <figcaption><span class="step">3</span> i2i with bg of set 4</figcaption>
+      </figure>
+    </div>
+  </section>
+  <section id="set-4">
+    <h2>Set 4</h2>
+    <div class="grid">
+      <figure>
+        <img src="4%20-%20Original.jpg" alt="Set 4 original" loading="lazy">
+        <figcaption><span class="step">1</span> Original</figcaption>
+      </figure>
+      <figure>
+        <img src="4%20-%20i2i.png" alt="Set 4 i2i" loading="lazy">
+        <figcaption><span class="step">2</span> i2i (first step)</figcaption>
+      </figure>
+      <figure>
+        <img src="swapped/4%20-%20i2i_with_3%20-%20i2i.png" alt="Set 4 with background of set 3" loading="lazy">
+        <figcaption><span class="step">3</span> i2i with bg of set 3</figcaption>
+      </figure>
+    </div>
+  </section>
+  <section id="set-5">
+    <h2>Set 5</h2>
+    <div class="grid">
+      <figure>
+        <img src="5%20-%20Original.jpg" alt="Set 5 original" loading="lazy">
+        <figcaption><span class="step">1</span> Original</figcaption>
+      </figure>
+      <figure>
+        <img src="5%20-%20i2i.png" alt="Set 5 i2i" loading="lazy">
+        <figcaption><span class="step">2</span> i2i (first step)</figcaption>
+      </figure>
+      <figure>
+        <img src="swapped/5%20-%20i2i_with_6%20-%20i2i.png" alt="Set 5 with background of set 6" loading="lazy">
+        <figcaption><span class="step">3</span> i2i with bg of set 6</figcaption>
+      </figure>
+    </div>
+  </section>
+  <section id="set-6">
+    <h2>Set 6</h2>
+    <div class="grid">
+      <figure>
+        <img src="6%20-%20Original.png" alt="Set 6 original" loading="lazy">
+        <figcaption><span class="step">1</span> Original</figcaption>
+      </figure>
+      <figure>
+        <img src="6%20-%20i2i.png" alt="Set 6 i2i" loading="lazy">
+        <figcaption><span class="step">2</span> i2i (first step)</figcaption>
+      </figure>
+      <figure>
+        <img src="swapped/6%20-%20i2i_with_5%20-%20i2i.png" alt="Set 6 with background of set 5" loading="lazy">
+        <figcaption><span class="step">3</span> i2i with bg of set 5</figcaption>
+      </figure>
+    </div>
+  </section>
+  <section id="set-7">
+    <h2>Set 7</h2>
+    <div class="grid">
+      <figure>
+        <img src="7%20-%20Original.jpg" alt="Set 7 original" loading="lazy">
+        <figcaption><span class="step">1</span> Original</figcaption>
+      </figure>
+      <figure>
+        <img src="7%20-%20i2i.png" alt="Set 7 i2i" loading="lazy">
+        <figcaption><span class="step">2</span> i2i (first step)</figcaption>
+      </figure>
+      <figure>
+        <img src="swapped/7%20-%20i2i_with_8%20-%20i2i.png" alt="Set 7 with background of set 8" loading="lazy">
+        <figcaption><span class="step">3</span> i2i with bg of set 8</figcaption>
+      </figure>
+    </div>
+  </section>
+  <section id="set-8">
+    <h2>Set 8</h2>
+    <div class="grid">
+      <figure>
+        <img src="8%20-%20Original.jpg" alt="Set 8 original" loading="lazy">
+        <figcaption><span class="step">1</span> Original</figcaption>
+      </figure>
+      <figure>
+        <img src="8%20-%20i2i.png" alt="Set 8 i2i" loading="lazy">
+        <figcaption><span class="step">2</span> i2i (first step)</figcaption>
+      </figure>
+      <figure>
+        <img src="swapped/8%20-%20i2i_with_7%20-%20i2i.png" alt="Set 8 with background of set 7" loading="lazy">
+        <figcaption><span class="step">3</span> i2i with bg of set 7</figcaption>
+      </figure>
+    </div>
+  </section>
+  <section id="set-9">
+    <h2>Set 9</h2>
+    <div class="grid">
+      <figure>
+        <img src="9%20-%20Original.png" alt="Set 9 original" loading="lazy">
+        <figcaption><span class="step">1</span> Original</figcaption>
+      </figure>
+      <figure>
+        <img src="9%20-%20i2i.png" alt="Set 9 i2i" loading="lazy">
+        <figcaption><span class="step">2</span> i2i (first step)</figcaption>
+      </figure>
+      <figure>
+        <img src="swapped/9%20-%20i2i_with_10%20-%20i2i.png" alt="Set 9 with background of set 10" loading="lazy">
+        <figcaption><span class="step">3</span> i2i with bg of set 10</figcaption>
+      </figure>
+    </div>
+  </section>
+  <section id="set-10">
+    <h2>Set 10</h2>
+    <div class="grid">
+      <figure>
+        <img src="10%20-%20Original.jpg" alt="Set 10 original" loading="lazy">
+        <figcaption><span class="step">1</span> Original</figcaption>
+      </figure>
+      <figure>
+        <img src="10%20-%20i2i.png" alt="Set 10 i2i" loading="lazy">
+        <figcaption><span class="step">2</span> i2i (first step)</figcaption>
+      </figure>
+      <figure>
+        <img src="swapped/10%20-%20i2i_with_9%20-%20i2i.png" alt="Set 10 with background of set 9" loading="lazy">
+        <figcaption><span class="step">3</span> i2i with bg of set 9</figcaption>
+      </figure>
+    </div>
+  </section>
+</main>
+</body>
+</html>
